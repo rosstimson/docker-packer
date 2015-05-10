@@ -6,13 +6,12 @@
 # AUTHOR:   Ross Timson <ross@rosstimson.com>
 # LICENSE:  WTFPL - http://wtfpl.net
 #
-# Installs Packer alongside Ruby.  This image is primarily used with
-# Drone.io and Chef / Berkshelf to build AWS AMIs.
+# Installs Packer (https://packer.io).
 #
 # Packer:   http://www.packer.io
 #
 
-FROM ruby:2.2
+FROM debian:jessie
 MAINTAINER Ross Timson <ross@rosstimson.com>
 
 ENV PACKER_VERSION 0.7.5

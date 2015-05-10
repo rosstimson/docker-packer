@@ -1,15 +1,10 @@
 # Packer Dockerfile (rosstimson/packer)
 
-This repository contains a **Dockerfile** to build [Packer][packer]
-alongside Ruby.
-
-I primarily use the container that this builds with [Drone][drone]
-continuous integration to automate and test the building of custom
-Amazon AMIs.
+This repository contains a **Dockerfile** to build [Packer][packer].
 
 ## Dependencies
 
-* [Official Ruby 2.2 image][ruby-image]
+* [Official Debian image][ruby-image]
 
 ## Installation
 
@@ -40,5 +35,4 @@ License.
 
 [packer]:         http://www.packer.io
 [docker]:         https://www.docker.io
-[ruby-image]:     https://registry.hub.docker.com/_/ruby
-[drone]:          https://drone.io
+[debian-image]:   https://registry.hub.docker.com/_/debian/
