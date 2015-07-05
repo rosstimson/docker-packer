@@ -14,7 +14,7 @@
 FROM debian:jessie
 MAINTAINER Ross Timson <ross@rosstimson.com>
 
-ENV PACKER_VERSION 0.7.5
+ENV PACKER_VERSION 0.8.1
 
 # Download and install Packer.
 RUN mkdir /tmp/packer \
@@ -22,7 +22,7 @@ RUN mkdir /tmp/packer \
     && apt-get update && apt-get install -y curl ca-certificates unzip --no-install-recommends && rm -rf /var/lib/apt/lists/* \
     && curl -O -sS -L https://dl.bintray.com/mitchellh/packer/packer_${PACKER_VERSION}_linux_amd64.zip \
     && unzip packer_${PACKER_VERSION}_linux_amd64.zip \
-    && apt-get purge -y --auto-remove unzip \
+    && apt-get purge -y --auto-remove curl unzip \
     && mv packer* /usr/local/bin \
     && rm -rf /tmp/packer
 
