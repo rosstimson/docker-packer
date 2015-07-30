@@ -14,7 +14,7 @@
 FROM debian:jessie
 MAINTAINER Ross Timson <ross@rosstimson.com>
 
-ENV PACKER_VERSION 0.8.1
+ENV PACKER_VERSION 0.8.2
 
 # Download and install Packer.
 RUN mkdir /tmp/packer \
