@@ -4,7 +4,7 @@ This repository contains a **Dockerfile** to build [Packer][packer].
 
 ## Dependencies
 
-* [Official Debian image][ruby-image]
+* [Official Alpine Linux image][alpine-image]
 
 ## Installation
 
@@ -35,4 +35,4 @@ License.
 
 [packer]:         http://www.packer.io
 [docker]:         https://www.docker.io
-[debian-image]:   https://registry.hub.docker.com/_/debian/
+[alpine-image]:   https://hub.docker.com/_/alpine/
