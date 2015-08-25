@@ -17,7 +17,7 @@ ENV PACKER_VERSION 0.8.6
 # Download and install Packer.
 RUN mkdir /tmp/packer \
     && cd /tmp/packer \
-    && apk add --update curl ca-certificates openssh-client git unzip \
+    && apk add --update bash curl ca-certificates openssh-client git unzip \
     && curl -O -sS -L https://dl.bintray.com/mitchellh/packer/packer_${PACKER_VERSION}_linux_amd64.zip \
     && unzip packer_${PACKER_VERSION}_linux_amd64.zip \
     && apk del unzip \
