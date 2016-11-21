@@ -12,7 +12,7 @@
 FROM alpine
 MAINTAINER Ross Timson <ross@rosstimson.com>
 
-ENV PACKER_VERSION 0.10.0
+ENV PACKER_VERSION 0.12.0
 
 # Download and install Packer.
 RUN mkdir /tmp/packer \
